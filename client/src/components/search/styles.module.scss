@@ -1,0 +1,13 @@
+.searchContainer {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 140px;
+    border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+    .searchContainer {
+        margin-top: 190px;
+    }
+}

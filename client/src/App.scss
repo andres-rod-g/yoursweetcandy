@@ -1,0 +1,178 @@
+$color-texto: #ff6ee7;
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 0px; /* gutter size */
+  background-clip: padding-box;
+  min-width: 100%;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.App {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 10px;
+  border-color: #282c34;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+nav {
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
+  z-index: 1;
+  
+  color: $color-texto;
+
+  h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size:xx-large;
+    animation-duration: 1s;
+  }
+
+  h1:hover {
+    color: #f047d9;
+  }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+#index {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 30px;
+  margin: 0; 
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
+  
+  a {
+    display: flex;
+    color:cornflowerblue;
+    cursor: pointer;
+  }
+}
+
+#Posts {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.post {
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+#botonEnviar {
+  background-color: $color-texto;
+  border: #db22bc;
+}
+
+#search_bar {
+  
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  
+  input {
+    border: 0px;
+    margin: 0px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #index {
+    margin-top: 50px;
+  }
+  #Posts {
+    margin-top: 40px;
+  }
+
+  #form_row {
+    width: 100vw;
+  }
+
+  #botonEnviar {
+    margin: 0;
+    width: 100%;
+  }
+
+  nav {
+    #title_column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #search_column {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+}
